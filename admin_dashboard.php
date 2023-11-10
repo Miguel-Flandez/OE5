@@ -350,7 +350,9 @@ if (!isset($_SESSION['loggedin'])) {
                                     ?>
 
                                     <span>
-                                        <img class="img-profile rounded-circle" src="data:image/jpeg;base64,<?php echo base64_encode($profile_picture); ?>" height="20" width="20">
+                                    <?php
+                                    echo "<img src='pics/$picture' width = '60' height = '60'>";
+                                    ?>
                                     </span>
 
 
